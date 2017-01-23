@@ -1,20 +1,21 @@
 # itermore
 # gpermutations(list,permutation_groups)
-from itermore import gpermutations
 
-gper = gpermutations(['a','b','c','d','e'],[1,0,2,1,0])
+     from itermore import gpermutations
 
-for p in gper:
+     gper = gpermutations(['a','b','c','d','e'],[1,0,2,1,0])
 
-     print p
+     for p in gper:
 
-('a', 'b', 'c', 'd', 'e')
+          print p
 
-('a', 'e', 'c', 'd', 'b')
+     ('a', 'b', 'c', 'd', 'e')
 
-('d', 'b', 'c', 'a', 'e')
+     ('a', 'e', 'c', 'd', 'b')
 
-('d', 'e', 'c', 'a', 'b')
+     ('d', 'b', 'c', 'a', 'e')
+
+     ('d', 'e', 'c', 'a', 'b')
 
 
 
