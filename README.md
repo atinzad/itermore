@@ -1,4 +1,12 @@
-# itermore
+# Itermore
+
+Is a library that contains one function, gpermutation, that works similarly to Itertools' permutations, but has the ability to permute using groups, thus the g in gpermutations
+
+# Installation
+
+     >>pip install itermore
+
+
 # gpermutations(list,permutation_groups)
 
      from itermore import gpermutations
@@ -8,6 +16,8 @@
      for p in gper:
 
           print p
+
+Output is 
 
      ('a', 'b', 'c', 'd', 'e')
 
