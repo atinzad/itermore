@@ -46,15 +46,20 @@ def gpermutations(iterable, grouping):
     from collections import defaultdict
     import random
     import copy
+    
+    #get the group labels (in the example groups are 0 and 1
     groups = list(set(grouping))
+    
     layer_iterable = defaultdict(list)
     group_pos = defaultdict(list)
 
     for i, (group, elem) in enumerate(zip(grouping, iterable)):
-        # print i,group,elem
+        #each layer will have its own permutation
         layer_iterable[group].append(elem)
-        group_pos[group].append(i)
+        #Original position of the element 
+        group_pos[group].append(i) 
 
+    #recursive function
     def par_temp(l_iterable, g_pos):
         select_top_group = random.choice(list(g_pos))
         group_pos_b = copy.deepcopy(g_pos)
@@ -76,7 +81,7 @@ def gpermutations(iterable, grouping):
                 for t2 in par_temp(layer_iterable_b, group_pos_b):
                     yield output + t2
 
-    if len(groups) == 1:
+    if len(groups) == 1: #works like regular permutations from itertools
         for i in itertools.permutations(iterable):
             yield i
     else:
