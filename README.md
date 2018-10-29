@@ -1,6 +1,6 @@
 # Itermore
 
-Is a library that contains one function, gpermutation, that works similarly to Itertools' permutations, but has the ability to permute using groups, thus the g in gpermutations
+This package contains one function, gpermutation, that works similarly to Itertools' permutations, but has the ability to permute using groups, thus the g in gpermutations. An example is shown bellow.
 
 # Installation
 
