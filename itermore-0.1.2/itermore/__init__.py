@@ -10,7 +10,7 @@ Department of Electrical and Computer Science Engineering
 Advanced Computer Architecture Group
 """
 
-__author__ = "Ahamd Albaqsami (aalbaqsa@uci.edu)"
+__author__ = "Ahamd Albaqsami"
 __version__ = "0.1.0"
 __copyright__ = "Copyright (c) 2017 Ahmad Albaqsami"
 __license__ = "MIT"
